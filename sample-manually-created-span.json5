@@ -1,0 +1,81 @@
+{
+  "Name": "roll",
+  "SpanContext": {
+    "TraceID": "526b77e4283fe396f044c200d5053e99",
+    "SpanID": "64db1000813dc381",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "Parent": {
+    "TraceID": "526b77e4283fe396f044c200d5053e99",
+    "SpanID": "acfaab1c8e29f6b3",
+    "TraceFlags": "01",
+    "TraceState": "",
+    "Remote": false
+  },
+  "SpanKind": 1,
+  "StartTime": "2025-01-13T17:51:56.385498+01:00",
+  "EndTime": "2025-01-13T17:51:56.38570875+01:00",
+  "Attributes": [
+    {
+      "Key": "roll.value",
+      "Value": {
+        "Type": "INT64",
+        "Value": 2
+      }
+    }
+  ],
+  "Events": null,
+  "Links": null,
+  "Status": {
+    "Code": "Unset",
+    "Description": ""
+  },
+  "DroppedAttributes": 0,
+  "DroppedEvents": 0,
+  "DroppedLinks": 0,
+  "ChildSpanCount": 0,
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_dice"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.33.0"
+      }
+    }
+  ],
+  "InstrumentationScope": {
+    "Name": "go.opentelemetry.io/otel/example/dice",
+    "Version": "",
+    "SchemaURL": "",
+    "Attributes": null
+  },
+  "InstrumentationLibrary": {
+    "Name": "go.opentelemetry.io/otel/example/dice",
+    "Version": "",
+    "SchemaURL": "",
+    "Attributes": null
+  }
+}

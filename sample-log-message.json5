@@ -1,0 +1,59 @@
+{
+  "Timestamp": "2025-01-13T17:51:56.385548+01:00",
+  "ObservedTimestamp": "2025-01-13T17:51:56.38563+01:00",
+  "Severity": 9,
+  "SeverityText": "",
+  "Body": {
+    "Type": "String",
+    "Value": "Alice is rolling the dice"
+  },
+  "Attributes": [
+    {
+      "Key": "result",
+      "Value": {
+        "Type": "Int64",
+        "Value": 2
+      }
+    }
+  ],
+  "TraceID": "526b77e4283fe396f044c200d5053e99",
+  "SpanID": "64db1000813dc381",
+  "TraceFlags": "01",
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_dice"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.33.0"
+      }
+    }
+  ],
+  "Scope": {
+    "Name": "go.opentelemetry.io/otel/example/dice",
+    "Version": "",
+    "SchemaURL": "",
+    "Attributes": {}
+  },
+  "DroppedAttributes": 0
+}

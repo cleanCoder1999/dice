@@ -1,0 +1,482 @@
+{
+  "Resource": [
+    {
+      "Key": "service.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "unknown_service:___go_build_dice"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.language",
+      "Value": {
+        "Type": "STRING",
+        "Value": "go"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.name",
+      "Value": {
+        "Type": "STRING",
+        "Value": "opentelemetry"
+      }
+    },
+    {
+      "Key": "telemetry.sdk.version",
+      "Value": {
+        "Type": "STRING",
+        "Value": "1.33.0"
+      }
+    }
+  ],
+  "ScopeMetrics": [
+
+    // todo NOTE: these metrics are manually created by the implementation in [rolldice.go]
+    {
+      "Scope": {
+        "Name": "go.opentelemetry.io/otel/example/dice",
+        "Version": "",
+        "SchemaURL": "",
+        "Attributes": null
+      },
+      "Metrics": [
+        {
+          "Name": "dice.rolls",
+          "Description": "The number of rolls by roll value",
+          "Unit": "{roll}",
+          "Data": {
+            "DataPoints": [
+              {
+                "Attributes": [
+                  {
+                    "Key": "roll.value",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 2
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.025985+01:00",
+                "Time": "2025-01-13T18:00:30.330096+01:00",
+                "Value": 1,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T17:51:56.385674+01:00",
+                    "Value": 1,
+                    "SpanID": "ZNsQAIE9w4E=",
+                    "TraceID": "Umt35Cg/45bwRMIA1QU+mQ=="
+                  }
+                ]
+              },
+              {
+                "Attributes": [
+                  {
+                    "Key": "roll.value",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 4
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.025985+01:00",
+                "Time": "2025-01-13T18:00:30.330096+01:00",
+                "Value": 1,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:17.435153+01:00",
+                    "Value": 1,
+                    "SpanID": "csUCh8ZicE0=",
+                    "TraceID": "K7iNXSHYbr2Oi+Bm1FXpaw=="
+                  }
+                ]
+              },
+              {
+                "Attributes": [
+                  {
+                    "Key": "roll.value",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 1
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.025985+01:00",
+                "Time": "2025-01-13T18:00:30.330096+01:00",
+                "Value": 2,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:18.502916+01:00",
+                    "Value": 1,
+                    "SpanID": "azngdirpYCg=",
+                    "TraceID": "6wa0e5UFvTJWgdD2j76kUg=="
+                  },
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:19.503503+01:00",
+                    "Value": 1,
+                    "SpanID": "cSAnKwzHg9Q=",
+                    "TraceID": "AGQmtgrO6Oadfgo/KgjBaA=="
+                  }
+                ]
+              },
+              {
+                "Attributes": [
+                  {
+                    "Key": "roll.value",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 3
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.025985+01:00",
+                "Time": "2025-01-13T18:00:30.330096+01:00",
+                "Value": 1,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:20.469977+01:00",
+                    "Value": 1,
+                    "SpanID": "OruzI2k2FS0=",
+                    "TraceID": "qY9wu5tL5z+ZKenKvZjuuA=="
+                  }
+                ]
+              }
+            ],
+            "Temporality": "CumulativeTemporality",
+            "IsMonotonic": true
+          }
+        }
+      ]
+    },
+
+    // todo NOTE: these metrics are automatically created by the instrumentation library "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+    {
+      "Scope": {
+        "Name": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+        "Version": "0.58.0",
+        "SchemaURL": "",
+        "Attributes": null
+      },
+      "Metrics": [
+        {
+          "Name": "http.server.request.size",
+          "Description": "Measures the size of HTTP request messages.",
+          "Unit": "By",
+          "Data": {
+            "DataPoints": [
+              {
+                "Attributes": [
+                  {
+                    "Key": "http.method",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "GET"
+                    }
+                  },
+                  {
+                    "Key": "http.route",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "/rolldice/{player}"
+                    }
+                  },
+                  {
+                    "Key": "http.scheme",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "http"
+                    }
+                  },
+                  {
+                    "Key": "http.status_code",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 200
+                    }
+                  },
+                  {
+                    "Key": "net.host.name",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "localhost"
+                    }
+                  },
+                  {
+                    "Key": "net.host.port",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 8080
+                    }
+                  },
+                  {
+                    "Key": "net.protocol.name",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "http"
+                    }
+                  },
+                  {
+                    "Key": "net.protocol.version",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "1.1"
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.026436+01:00",
+                "Time": "2025-01-13T18:00:30.330152+01:00",
+                "Value": 0,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:20.470003+01:00",
+                    "Value": 0,
+                    "SpanID": "C0A/p1lqPuA=",
+                    "TraceID": "qY9wu5tL5z+ZKenKvZjuuA=="
+                  },
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:18.502934+01:00",
+                    "Value": 0,
+                    "SpanID": "7Vyn6RnSF98=",
+                    "TraceID": "6wa0e5UFvTJWgdD2j76kUg=="
+                  },
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:19.503531+01:00",
+                    "Value": 0,
+                    "SpanID": "VzUQHz/eA1w=",
+                    "TraceID": "AGQmtgrO6Oadfgo/KgjBaA=="
+                  }
+                ]
+              }
+            ],
+            "Temporality": "CumulativeTemporality",
+            "IsMonotonic": true
+          }
+        },
+        {
+          "Name": "http.server.response.size",
+          "Description": "Measures the size of HTTP response messages.",
+          "Unit": "By",
+          "Data": {
+            "DataPoints": [
+              {
+                "Attributes": [
+                  {
+                    "Key": "http.method",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "GET"
+                    }
+                  },
+                  {
+                    "Key": "http.route",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "/rolldice/{player}"
+                    }
+                  },
+                  {
+                    "Key": "http.scheme",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "http"
+                    }
+                  },
+                  {
+                    "Key": "http.status_code",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 200
+                    }
+                  },
+                  {
+                    "Key": "net.host.name",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "localhost"
+                    }
+                  },
+                  {
+                    "Key": "net.host.port",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 8080
+                    }
+                  },
+                  {
+                    "Key": "net.protocol.name",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "http"
+                    }
+                  },
+                  {
+                    "Key": "net.protocol.version",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "1.1"
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.026438+01:00",
+                "Time": "2025-01-13T18:00:30.330177+01:00",
+                "Value": 10,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:20.470005+01:00",
+                    "Value": 2,
+                    "SpanID": "C0A/p1lqPuA=",
+                    "TraceID": "qY9wu5tL5z+ZKenKvZjuuA=="
+                  },
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:18.502937+01:00",
+                    "Value": 2,
+                    "SpanID": "7Vyn6RnSF98=",
+                    "TraceID": "6wa0e5UFvTJWgdD2j76kUg=="
+                  },
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:19.503533+01:00",
+                    "Value": 2,
+                    "SpanID": "VzUQHz/eA1w=",
+                    "TraceID": "AGQmtgrO6Oadfgo/KgjBaA=="
+                  }
+                ]
+              }
+            ],
+            "Temporality": "CumulativeTemporality",
+            "IsMonotonic": true
+          }
+        },
+        {
+          "Name": "http.server.duration",
+          "Description": "Measures the duration of inbound HTTP requests.",
+          "Unit": "ms",
+          "Data": {
+            "DataPoints": [
+              {
+                "Attributes": [
+                  {
+                    "Key": "http.method",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "GET"
+                    }
+                  },
+                  {
+                    "Key": "http.route",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "/rolldice/{player}"
+                    }
+                  },
+                  {
+                    "Key": "http.scheme",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "http"
+                    }
+                  },
+                  {
+                    "Key": "http.status_code",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 200
+                    }
+                  },
+                  {
+                    "Key": "net.host.name",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "localhost"
+                    }
+                  },
+                  {
+                    "Key": "net.host.port",
+                    "Value": {
+                      "Type": "INT64",
+                      "Value": 8080
+                    }
+                  },
+                  {
+                    "Key": "net.protocol.name",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "http"
+                    }
+                  },
+                  {
+                    "Key": "net.protocol.version",
+                    "Value": {
+                      "Type": "STRING",
+                      "Value": "1.1"
+                    }
+                  }
+                ],
+                "StartTime": "2025-01-13T17:43:33.026439+01:00",
+                "Time": "2025-01-13T18:00:30.330182+01:00",
+                "Count": 5,
+                "Bounds": [
+                  0,
+                  5,
+                  10,
+                  25,
+                  50,
+                  75,
+                  100,
+                  250,
+                  500,
+                  750,
+                  1000,
+                  2500,
+                  5000,
+                  7500,
+                  10000
+                ],
+                "BucketCounts": [
+                  0,
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "Min": 0.103916,
+                "Max": 0.320625,
+                "Sum": 0.848082,
+                "Exemplars": [
+                  {
+                    "FilteredAttributes": null,
+                    "Time": "2025-01-13T18:00:20.470011+01:00",
+                    "Value": 0.141958,
+                    "SpanID": "C0A/p1lqPuA=",
+                    "TraceID": "qY9wu5tL5z+ZKenKvZjuuA=="
+                  }
+                ]
+              }
+            ],
+            "Temporality": "CumulativeTemporality"
+          }
+        }
+      ]
+    }
+  ]
+}
