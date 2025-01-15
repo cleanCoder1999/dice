@@ -36,6 +36,12 @@ func init() {
 	}
 }
 
+// rolldice generates a random number between 1 and 6, and writes it into the http response
+//
+// In addition, most of the function body is dedicated to manually instrument its logic by
+// (1) logging,
+// (2) creating and enriching a span
+// (3) and providing metrics
 func rolldice(w http.ResponseWriter, r *http.Request) {
 
 	// creates a span that is either a child of r.Context() if it contains a span.
@@ -45,6 +51,10 @@ func rolldice(w http.ResponseWriter, r *http.Request) {
 
 	roll := 1 + rand.Intn(6)
 
+	// the instrumentation code below
+	// (1) writes logs via the logger instance
+	// (2) sets attributes in the span
+	// (3) increments the metric counter
 	var msg string
 	if player := r.PathValue("player"); player != "" {
 		msg = fmt.Sprintf("%s is rolling the dice", player)
